@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
       connector: 'mongoose',
         settings: {
           //host: env('DATABASE_HOST'),
-          uri: env('DATABASE_URI', 'mongodb+srv://butika:<password>@butikabackend.ef4cz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
+          uri: env('DATABASE_URI', 'mongodb+srv://butika:butika@butikabackend.ef4cz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
           srv: env.bool('DATABASE_SRV', true),
           port: env.int('DATABASE_PORT', 27017),
           database: env('DATABASE_NAME'),
